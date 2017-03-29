@@ -44,7 +44,7 @@ aside a {
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 450px;
+    width: 400px;
     padding: 25px;
     background: #2DA4CD;
     color: #fff;
@@ -133,7 +133,7 @@ h2 {
 
 .qr {
     position: absolute;
-    bottom: 40px;
+    bottom: 300px;
     color: #004d40;
     font-size: 20px;
     text-align: center;
@@ -154,7 +154,7 @@ h2 {
 
 .main {
     position: relative;
-    left: 450px;
+    left: 400px;
     width: 810px;
     height: 1782px;
     padding: 15px 20px 0;
@@ -231,6 +231,7 @@ h5 {
 .exp {
     border-left: 2px solid #00796b;
     margin-left: 15px;
+    width: 600px;
 }
 
 .exp p {
