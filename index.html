@@ -27,7 +27,7 @@
 <body>
 <aside>
     <ul>
-        <li><a href="https://github.com/William-Hunter/Resume" target="_blank">源代码</a></li>
+        <!-- <li><a href="https://github.com/William-Hunter/Resume" target="_blank">源代码</a></li> -->
         <li><a href="https://www.github.com/William-Hunter" target="_blank">GitHub</a></li>
     </ul>
 </aside>
@@ -93,158 +93,13 @@
                 </dd>
             </li>
         </ul>
-        <div class="note"><p>我正在寻找技术岗位，希望借此机会为贵司献上我的一点绵薄之力，下图是我的微信二维码</p></div>
+        <div class="note"><p>我正在寻找工作岗位，希望借此机会为贵司献上我的一点绵薄之力，下图是我的微信二维码</p></div>
         <div class="qr">
             <div class="qr-in"><img src="img/wechat_qr.jpg" width="270"></div>
         </div>
     </div>
     <div class="main">
         <ul class="main-info">
-            <li>
-                <dt><i class="icon-bookmark"></i>企业项目</dt>
-
-                <h3>同创科技（2017.5 - 2019.9）</h3>
-                <ul class="exp">
-                    <li>
-                        <div class="circle"></div>
-                        <h4>基于小程序的电商销售平台</h4>
-                        <p>2017年是小程序元年，以客户端基于小程序实现的一个电子商务平台，接纳广大地市商户在平台经营，
-                            利用小程序作为微信用户的天然入口优势，辅以多种营销策略如：拼团，抽奖，秒杀等吸引消费者。
-                        </p>
-                        <p><b>涉及技术：</b><br>
-                            前端：使用微信小程序构建<br>
-                            后端：使用springMVC+Hibernate搭建的框架，<br>
-                            服务器：使用nginx作为反向代理，tomcat作为应用服务器<br>
-                            数据库：使用mysql<br>
-                            文件服务器：使用fastDFS分布式文件服务器搭建。<br>
-                            部署：基于centos+jdk去制作docker镜像，然后上传到docker registry，然后分发部署到各个服务器的docker容器上
-                        </p>
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>汇客多支付平台 <br><a href="https://www.hkdnb.com/hkd/wechat/index.html" target="_blank">https://www.hkdnb.com/hkd/wechat/index.html</a>
-                        </h4>
-                        <p>扫码支付平台，入住的门店商户可以在线生成支付二维码，消费者支付完毕之后可以参与商户设置的抽奖活动、以及满减、随机减反券活动，
-                            或者浏览商户的在线商城下单，提高用户对于门店的粘度，以达到拓客、锁客的目的。
-                        </p>
-                        <p><b>涉及技术：</b><br>
-                            前端：使用vue构建页面效果，<br>
-                            后端：使用SpringCloud+MybatisPlus搭建的框架，<br>
-                            服务器：使用nginx作为反向代理，将java多实例程序注册到Eureka作为集群<br>
-                            数据存储：使用mysql作为数据持久化存储，redis内存数据库作为缓存<br>
-                            文件服务器：则是使用fastDFS分布式文件服务器搭建。<br>
-                            部署：基于centos+jdk去制作docker镜像，然后上传到docker registry，然后分发部署到各个服务器的docker容器上
-                        </p>
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>汇客多红包广场 <br><a href="https://www.hkdnb.com/hkd/wechat/redpacket/index.html" target="_blank">
-                            https://www.hkdnb.com/hkd/wechat/redpacket/index.html
-                        </a></h4>
-                        <p>
-                            为了给支付平台吸引更多的流量，开发了一个红包广场功能，微信用户进入红包地图之后，可以去打开已存在的红包，
-                            录入口令录音就可领取随机金额的红包。并且可以推荐相关商家的商品。
-                        </p>
-                        <p><b>涉及技术：</b><br>
-                            前端：使用vue构建页面效果，<br>
-                            后端：使用SpringCloud+MybatisPlus搭建的框架，<br>
-                            服务器：使用nginx作为反向代理，将java多实例程序注册到Eureka作为集群<br>
-                            数据存储：使用mysql作为数据持久化存储，redis内存数据库作为缓存<br>
-                            文件服务器：则是使用fastDFS分布式文件服务器搭建。<br>
-                            部署：基于centos+jdk去制作docker镜像，然后上传到docker registry，然后分发部署到各个服务器的docker容器上
-                        </p>
-                    </li>
-                    <li>
-                        <div class="circle"></div>
-                        <h4>持续集成自动部署系统 CI<br><a href="https://github.com/William-Hunter/Dev_Ops" target="_blank">
-                            https://github.com/William-Hunter/Dev_Ops
-                        </a></h4>
-                        <p>
-                            随着系统的日渐成长，功能的变更与代码的上线也愈来愈频繁，传统的手动发布方式容易出现疏忽和低级错误，
-                            而且工作效率也不高，为了解决这个问题，在服务端编写了一系列的shell脚本来实现自动化发布。
-                        </p>
-                        <p><b>技术原理：</b><br>
-                            通过git命令拉取达到开发人员提交的最新代码，然后通过maven构建工具对源代码进行编译打包成docker镜像，
-                            然后上传到阿里云的docker registry，分发到各个生产环境的docker容器中，将要发布的服务模块下线，
-                            随后进行热更新，监控服务启动是否正常，然后将服务上线。 从而实现服务的更新。
-                        </p>
-                    </li>
-                </ul>
-
-                <h3>河南云家校（2017.1 - 2017.5）</h3>
-                <ul class="exp">
-                    <li>
-                        <div class="circle"></div>
-                        <h4>幼教招聘平台 <br>
-                            <a href="http://hr.iuuyun.com/yoyorecruit/" target="_blank">http://hr.iuuyun.com/yoyorecruit/</a>
-                        </h4>
-                        <p>开发的幼教招聘平台，专门针对幼教行业的提供了一个垂直的招聘平台，使得教师资源和院所资源可以互取所需。
-                            用户可以根据自身情况和期望职位去寻找用人单位，单位也可以主动联系自己感兴趣的人才。本人在整个项目中负责APP接口和WEB后端。
-                        </p>
-                        <p><b>涉及技术：</b>
-                            前端使用jquery构建页面效果，后端使用struts2+Hibernate4搭建的框架，数据库则为mysql，最终部署在linux上的tomcat服务器上。
-                        </p>
-                    </li>
-                </ul>
-
-                <h3>万庚国际速递（2016.3 - 2017.1）</h3>
-                <ul class="exp">
-                    <li>
-                        <div class="circle"></div>
-                        <h4>万庚国际速递企业系统</h4>
-                        <ul class="efe">
-                            <li>
-                                <h5>ERP / WMS<br>
-                                    <!--<a href="http://139.129.30.135:8090/" target="_blank">http://139.129.30.135:8090</a>-->
-                                </h5>
-                                <p>为公司开发和维护ERP系统，以及财务核算模块，提高办公自动化程度。为公司开发和维护仓储物流系统WMS，
-                                    保证仓储物流的高效和稳定。在项目中负责web前端和java后端以及优化数据库工作。</p>
-                                <p><b>涉及技术：</b>
-                                    前端使用ligerUI框架构建，后端使用Jfinal MVC开源框架，使用Mysql数据库存储数据，最终部署在linux上的tomcat服务器上。
-                                </p>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <h3>河南软通合力爬虫项目外包（2015.10 - 2016.3）</h3>
-                <ul class="exp">
-                    <li>
-                        <div class="circle"></div>
-                        <h4>河南软通合力爬虫项目外包</h4>
-                        <p>为美国byrsp电商网站开发的商品信息抓取爬虫，与国内“一淘”的运营模式类似。
-                            该项目是软通合力公司为美国电商网站byrsp开发的java爬虫代码，
-                            帮助服务器从大量的其他电商网站获取商品信息，放置在自己的平台，其运作模式类似于国内的“一淘”。
-                        </p>
-                        <p><b>涉及技术：</b>
-                            开发针对抓取被网站的前端界面js自动支付插件，使用javascripts代码注入网页的方式完成购物自动化，
-                            和用Jsoup开发的网页信息Java解析爬虫。
-                        </p>
-                    </li>
-                </ul>
-
-                <dt><i class="icon-bookmark"></i>个人项目</dt>
-                <ul class="exp">
-                    <li>
-                        <div class="circle"></div>
-                        <h4>58出租公寓房在线搜索</h4>
-                        <p>在线网址：
-                            <a href="http://118.25.212.166/58HouseMap/" target="_blank">http://118.25.212.166/58HouseMap/</a>
-                        </p>
-                        <p>github仓库：
-                            <a href="https://github.com/William-Hunter/SearchHouseOnMap" target="_blank">
-                                https://github.com/William-Hunter/SearchHouseOnMap</a>
-                        </p>
-                        <p>显示在高德地图上显示58的房源。</p>
-                        <p>
-                            <b>涉及技术：</b>
-                            先用Jsoup做爬虫去获取58的公寓房源，然后存储到mysql数据库，当用户访问页面的时候，调用高德地图的API，
-                            然后根据用户输入的信息过滤符合条件的房源资源，显示到高德地图的背景上，最终部署在linux上的tomcat服务器上。
-                        </p>
-                    </li>
-                </ul>
-
-            </li>
             <li>
                 <dt>
                     <i class="icon-bookmark"></i>
@@ -257,19 +112,18 @@
                         <h4>HTML / CSS /JavaScript</h4>
                         <p>熟悉响应式布局,熟悉原生Javascript和AJAX</p>
                         <p>熟悉 jQuery、ligerUI、VUE 等前端框架</p>
-                        <p>熟悉nodejs和npm</p>
-                        <p>熟悉gulp等打包工具</p>
+                        <p>熟悉nodejs环境和npm包管理器</p>
+                        <p>熟悉gulp、webpack等打包工具</p>
                     </li>
                 </ul>
                 <h3>服务端</h3>
                 <ul class="exp">
                     <li>
                         <div class="circle"></div>
-                        <h4>Java / Python / PHP</h4>
+                        <h4>Java / Python </h4>
                         <p>熟悉 Java 语言特性，三年 Java 开发经验</p>
-                        <p>熟悉 Spring、Struts、Hibernate、Jfinal、Mybatis等开源框架</p>
+                        <p>熟悉 SpringMVC、Struts、Hibernate、Jfinal、Mybatis、SpringBoot等开源框架</p>
                         <p>熟悉微服务的概念，有过SpringCloud框架开发经验</p>
-                        <p>熟悉php web项目的开发和部署</p>
                         <p>熟悉 Python2/3，有过爬虫、数据处理工具等项目开发经验</p>
                     </li>
                     <li>
@@ -307,6 +161,193 @@
                     </li>
                 </ul>
             </li>
+
+            <li>
+                <dt><i class="icon-bookmark"></i>企业项目</dt>
+
+                <h3>东启信息技术（2019.1 - 2020.6）</h3>
+                <ul class="exp">
+                    <li>
+                        <div class="circle"></div>
+                        <h4>美城日子<br>
+                            <!-- <img src="img/美城日子下载.png" alt="图片" /> -->
+                        </h4>
+                        <p><b>项目介绍：</b><br>一个淘客推广平台，提供推广者发展下级，三级反润。</p>
+                        <p><b>工作职责：</b><br>负责数据结构设计，分解指派开发任务，指导组员开发Http API接口，以及后台管理页面。</p>
+                        <p><b>涉及技术：</b><br>
+                            前端：安卓与IOS原生应用，后台管理使用vue-elementUI<br>
+                            后端：使用spring boot+ JPA搭建的框架<br>
+                            服务器：使用nginx作为反向代理<br>
+                            数据库：使用mysql存储数据
+                        </p>
+                    </li>
+                    <li>
+                        <div class="circle"></div>
+                        <h4>宝宝起名<br>
+                            <a href="http://web.yjqiming.com" target="_blank">http://web.yjqiming.com</a>
+                        </h4>
+                        <p><b>项目介绍：</b><br>父母希望给孩子一个好名字，每个人都追求充满诗意和令人印象深刻的名字。
+                            可生成大量好名字供您挑选，提供近1000篇取名知识文章，提供近3000篇育儿知识文章。</p>
+                        <p><b>工作职责：</b><br>负责数据结构设计，开发Http API接口。</p>
+                        <p><b>涉及技术：</b><br>
+                            前端：使用微信h5页面构建页面<br>
+                            后端：使用spring boot+ JPA搭建的框架<br>
+                            服务器：使用nginx作为反向代理<br>
+                            数据库：使用mysql存储数据
+                        </p>
+                    </li>
+                </ul>
+
+                <h3>点点通科技（2017.5 - 2019.1）</h3>
+                <ul class="exp">
+                    <li>
+                        <div class="circle"></div>
+                        <h4>基于小程序的电商销售平台</h4>
+                        <p><b>项目介绍：</b><br>2017年是小程序元年，以客户端基于小程序实现的一个电子商务平台，接纳广大地市商户在平台经营，
+                            利用小程序作为微信用户的天然入口优势，辅以多种营销策略如：拼团，抽奖，秒杀等吸引消费者。
+                        </p>
+                        <p><b>工作职责：</b><br>负责数据结构设计，开发Http API接口。以及后台管理界面的构建</p>
+                        <p><b>涉及技术：</b><br>
+                            前端：使用微信小程序构建<br>
+                            后端：使用springMVC+Hibernate搭建的框架，<br>
+                            服务器：使用nginx作为反向代理，tomcat作为应用服务器<br>
+                            数据库：使用mysql<br>
+                            文件服务器：使用fastDFS分布式文件服务器搭建。<br>
+                            部署：基于centos+jdk去制作docker镜像，然后上传到docker registry，然后分发部署到各个服务器的docker容器上
+                        </p>
+                    </li>
+                    <li>
+                        <div class="circle"></div>
+                        <h4>汇客多支付平台 <br>
+                            <a href="https://www.hkdnb.com/hkd/wechat/index.html" target="_blank">https://www.hkdnb.com/hkd/wechat/index.html</a>
+                        </h4>
+                        <p><b>项目介绍：</b><br>扫码支付平台，入住的门店商户可以在线生成支付二维码，消费者支付完毕之后可以参与商户设置的抽奖活动、以及满减、随机减反券活动，
+                            或者浏览商户的在线商城下单，提高用户对于门店的粘度，以达到拓客、锁客的目的。
+                        </p>
+                        <p><b>工作职责：</b><br>负责数据结构设计，开发Http API接口。以及后台管理界面的构建</p>
+                        <p><b>涉及技术：</b><br>
+                            前端：使用vue构建页面效果，<br>
+                            后端：使用SpringCloud+MybatisPlus搭建的框架，<br>
+                            服务器：使用nginx作为反向代理，将java多实例程序注册到Eureka作为集群<br>
+                            数据存储：使用mysql作为数据持久化存储，redis内存数据库作为缓存<br>
+                            文件服务器：则是使用fastDFS分布式文件服务器搭建。<br>
+                            部署：基于centos+jdk去制作docker镜像，然后上传到docker registry，然后分发部署到各个服务器的docker容器上
+                        </p>
+                    </li>
+                    <li>
+                        <div class="circle"></div>
+                        <h4>汇客多红包广场 <br><a href="https://www.hkdnb.com/hkd/wechat/redpacket/index.html" target="_blank">
+                            https://www.hkdnb.com/hkd/wechat/redpacket/index.html
+                        </a></h4>
+                        <p><b>项目介绍：</b><br>
+                            为了给支付平台吸引更多的流量，创建了一个红包广场，通过吸引微信用户进入红包地图之后，在微信用户领取口令红包时，可以为平台引流和推荐商品。
+                        </p>
+                        <p><b>工作职责：</b><br>负责数据结构设计，开发Http API接口。以及后台管理界面的构建</p>
+                        <p><b>涉及技术：</b><br>
+                            前端：使用vue构建页面效果，<br>
+                            后端：使用SpringCloud+MybatisPlus搭建的框架，<br>
+                            服务器：使用nginx作为反向代理，将java多实例程序注册到Eureka作为集群<br>
+                            数据存储：使用mysql作为数据持久化存储，redis内存数据库作为缓存<br>
+                            文件服务器：则是使用fastDFS分布式文件服务器搭建。<br>
+                            部署：基于centos+jdk去制作docker镜像，然后上传到docker registry，然后分发部署到各个服务器的docker容器上
+                        </p>
+                    </li>
+                    <li>
+                        <div class="circle"></div>
+                        <h4>持续集成自动部署系统 CI<br><a href="https://github.com/William-Hunter/Dev_Ops" target="_blank">
+                            https://github.com/William-Hunter/Dev_Ops
+                        </a></h4>
+                        <p><b>项目介绍：</b><br>
+                            随着系统的日渐成长，功能的变更与代码的上线也愈来愈频繁，传统的手动发布方式容易出现疏忽和低级错误，
+                            而且工作效率也不高，为了解决这个问题，在服务端编写了一系列的shell脚本来实现自动化发布。
+                        </p>
+                        <p><b>工作职责：</b><br>设计自动发布流程，开发自动化工具</p>
+                        <p><b>技术原理：</b><br>
+                            通过git命令拉取达到开发人员提交的最新代码，然后通过maven构建工具对源代码进行编译打包成docker镜像，
+                            然后上传到阿里云的docker registry，分发到各个生产环境的docker容器中，将要发布的服务模块下线，
+                            随后进行热更新，监控服务启动是否正常，然后将服务上线。 从而实现服务的更新。
+                        </p>
+                    </li>
+                </ul>
+
+                <!-- <h3>河南云家校（2017.1 - 2017.5）</h3> -->
+                <!-- <ul class="exp">
+                    <li>
+                        <div class="circle"></div>
+                        <h4>幼教招聘平台 <br>
+                            <a href="http://hr.iuuyun.com/yoyorecruit/" target="_blank">http://hr.iuuyun.com/yoyorecruit/</a>
+                        </h4>
+                        <p>开发的幼教招聘平台，专门针对幼教行业的提供了一个垂直的招聘平台，使得教师资源和院所资源可以互取所需。
+                            用户可以根据自身情况和期望职位去寻找用人单位，单位也可以主动联系自己感兴趣的人才。本人在整个项目中负责APP接口和WEB后端。
+                        </p>
+                        <p><b>涉及技术：</b>
+                            前端使用jquery构建页面效果，后端使用struts2+Hibernate4搭建的框架，数据库则为mysql，最终部署在linux上的tomcat服务器上。
+                        </p>
+                    </li>
+                </ul> -->
+
+                <h3>万庚国际速递（2016.3 - 2017.5）</h3>
+                <ul class="exp">
+                    <li>
+                        <div class="circle"></div>
+                        <h4>万庚国际速递企业系统</h4>
+                        <ul class="efe">
+                            <li>
+                                <h5>ERP / WMS<br>
+                                    <!--<a href="http://139.129.30.135:8090/" target="_blank">http://139.129.30.135:8090</a>-->
+                                </h5>
+                                <p><b>项目介绍：</b><br>
+                                    为公司开发和维护ERP系统，以及财务核算模块，提高办公自动化程度。为公司开发和维护仓储物流系统WMS，
+                                    保证仓储物流的高效和稳定。在项目中负责web前端和java后端以及优化数据库工作。</p>
+                                <p><b>工作职责：</b><br>负责数据结构设计，开发Http API接口。以及后台管理界面的构建</p>
+                                <p><b>涉及技术：</b>
+                                    前端使用ligerUI框架构建，后端使用Jfinal MVC开源框架，使用Mysql数据库存储数据，最终部署在linux上的tomcat服务器上。
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- <h3>河南软通合力爬虫项目外包（2015.10 - 2016.3）</h3>
+                <ul class="exp">
+                    <li>
+                        <div class="circle"></div>
+                        <h4>河南软通合力爬虫项目外包</h4>
+                        <p>为美国byrsp电商网站开发的商品信息抓取爬虫，与国内“一淘”的运营模式类似。
+                            该项目是软通合力公司为美国电商网站byrsp开发的java爬虫代码，
+                            帮助服务器从大量的其他电商网站获取商品信息，放置在自己的平台，其运作模式类似于国内的“一淘”。
+                        </p>
+                        <p><b>涉及技术：</b>
+                            开发针对抓取被网站的前端界面js自动支付插件，使用javascripts代码注入网页的方式完成购物自动化，
+                            和用Jsoup开发的网页信息Java解析爬虫。
+                        </p>
+                    </li>
+                </ul> -->
+            </li>
+
+            <li>
+                <dt><i class="icon-bookmark"></i>个人项目</dt>
+                <ul class="exp">
+                    <li>
+                        <div class="circle"></div>
+                        <h4>58出租公寓房在线搜索</h4>
+                        <!-- <p>在线网址：
+                            <a href="http://118.25.212.166/58HouseMap/" target="_blank">http://118.25.212.166/58HouseMap/</a>
+                        </p> -->
+                        <p>github仓库：
+                            <a href="https://github.com/William-Hunter/SearchHouseOnMap" target="_blank">
+                                https://github.com/William-Hunter/SearchHouseOnMap</a>
+                        </p>
+                        <p>显示在高德地图上显示58的房源。</p>
+                        <p>
+                            <b>涉及技术：</b>
+                            先用Jsoup做爬虫去获取58的公寓房源，然后存储到mysql数据库，当用户访问页面的时候，调用高德地图的API，
+                            然后根据用户输入的信息过滤符合条件的房源资源，显示到高德地图的背景上，最终部署在linux上的tomcat服务器上。
+                        </p>
+                    </li>
+                </ul>
+            </li>
+        
         </ul>
     </div>
 </div>
